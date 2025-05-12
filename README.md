@@ -17,3 +17,18 @@ docker-compose ps
 
 ./sink-connector.sh
 ```
+
+### Kafka Connect API's:
+```
+1. Show all connectors
+
+curl http://localhost:8083/connectors
+
+2. Show specifig connector status
+
+curl http://localhost:8083/connectors/postgres-connector/status
+
+3. Delete connector
+
+curl -X DELETE http://localhost:8083/connectors/postgres-connector
+```
