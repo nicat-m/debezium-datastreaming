@@ -6,7 +6,7 @@ curl -X POST http://localhost:8083/connectors -H 'Content-Type: application/json
      "tasks.max": "1",
      "topics": "pg1.public.users",
      "schema.ignore": "true",
-     "key.ignore": "true",
+     "key.ignore": "false",
      "connection.url": "http://elasticsearch:9200",
      "type.name": "_doc",
      "value.converter.schemas.enable": "false",
